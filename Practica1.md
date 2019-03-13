@@ -1,5 +1,5 @@
 # Práctica 1: Preparación de las herramientas.
-# Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz
+## Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz
 
 Para comenzar, se deben instalar 2 máquinas virtuales Ubuntu server, ambas con los servicios de Apache, Mysql y Php (LAMP), siguiendo los pasos de instalación explicados en el guión.
 
