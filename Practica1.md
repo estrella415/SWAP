@@ -9,7 +9,7 @@ A continuación, realizaremos los objetivos de la práctica:
 
 Para ello, editaremos el archivo /etc/network/interfaces, tal y como aparece en la siguiente imagen:
 
-IMAGEN1
+![img](https://github.com/estrella415/SWAP/imagen1.jpg)
 
 También deberemos configurar VirtualBox añadiendo un adaptador de red interna a cada máquina.
 
