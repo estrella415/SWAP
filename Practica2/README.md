@@ -10,7 +10,7 @@ Para ello disponemos de la herramienta **tar**.
 
 Para copiar archivos con tar sólo debemos introducir este comando: *tar czf - directorio | ssh equipodestino 'cat > ~/tar.tgz'*.
 
-
+![img](https://github.com/estrella415/SWAP/blob/master/Practica2/im2.png)
 
 
 **2. Clonado de una carpeta entre las dos máquinas:**
@@ -32,7 +32,7 @@ Los pasos a seguir son los siguientes:
 2. Copiamos la clave a la máquina 1: *ssh-copy-id maquina1*.
 3. Ya podemos conectarnos a la máquina 1 sin contraseña: *ssh maquina1*.
 
-Para ejecutar comandos simplemente deberemos añadirlo al final del comando sshpara conectarnos: *ssh maquina1 uname -a*.
+Para ejecutar comandos, deberemos añadirlo al final del comando ssh para conectarnos: *ssh maquina1 uname -a*.
 
 A continuación, una captura de todos estos pasos:
 
