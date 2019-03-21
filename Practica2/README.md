@@ -48,5 +48,5 @@ Minuto Hora DiaDelMes Mes DiaDeLaSemana Usuario Comando.
 Entonces, para que el comando se ejecute cada hora todos los dias, añadimos la siguiente línea: 
 0 * * * * usuario rsync -avz -e ssh ipmaquina1:/var/www/ /var/www/.
 
-![img](https://github.com/estrella415/SWAP/blob/master/Practica2/im4.png)
+![img](https://github.com/estrella415/SWAP/blob/master/Practica2/im5.png)
 
