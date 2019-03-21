@@ -42,10 +42,10 @@ A continuación, una captura de todos estos pasos:
 
 **4. Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas:**
 
-Para ello, debemos editar el archivo /etc/crontab, en el cuál cada línea está formada por los siguientes campos:
+Para ello, debemos editar el archivo /etc/crontab, en el cuál cada línea está formada por los siguientes campos:  
 Minuto Hora DiaDelMes Mes DiaDeLaSemana Usuario Comando.
 
-Entonces, para que el comando se ejecute cada hora todos los dias, añadimos la siguiente línea: 
+Entonces, para que el comando se ejecute cada hora todos los días, añadimos la siguiente línea:   
 0 * * * * usuario rsync -avz -e ssh ipmaquina1:/var/www/ /var/www/.
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica2/im5.png)
