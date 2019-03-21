@@ -10,7 +10,7 @@ Para ello disponemos de la herramienta **tar**.
 
 Para copiar archivos con tar sólo debemos introducir este comando: *tar czf - directorio | ssh equipodestino 'cat > ~/tar.tgz'*.
 
-![img](https://github.com/estrella415/SWAP/blob/master/Practica2/im2.png)
+![img](https://github.com/estrella415/SWAP/blob/master/Practica2/im6.png)
 
 
 **2. Clonado de una carpeta entre las dos máquinas:**
