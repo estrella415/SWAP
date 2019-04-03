@@ -41,7 +41,8 @@ A continuación, lanzamos el servicio haproxy mediante el comando: *sudo /usr/sb
 
 Para esta parte, creamos una nueva máquina desde la que lanzaremos las peticiones.  
 También debemos instalar la herramienta htop en las demás (todas menos la nueva).  
-Ejecutamos htop en todas ellas, y en la nueva máquina ejecutamos el comando: *ab -n 1000 -c 10 http://192.168.2.121/index.html*.  
+Ejecutamos htop en todas ellas, y en la nueva máquina ejecutamos el comando:  
+*ab -n 1000 -c 10 http://192.168.2.121/index.html*.  
 
 En la imagen vemos cómo las máquinas se someten a una carga alta:
 
