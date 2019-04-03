@@ -14,16 +14,16 @@ sudo systemctl start nginx*
 
 Comprobamos que funciona, tal y como se muestra en la imagen:
 
-![img](https://github.com/estrella415/SWAP/blob/master/Practica2/1.png)
+![img](https://github.com/estrella415/SWAP/blob/master/Practica3/1.png)
 
 A continuación, editamos el archivo /etc/nginx/nginx.conf, comentando la línea que dice el guión (*include /etc/nginx/sites-enabled*). 
 También borramos el contenido del archivo /etc/nginx/conf.d/default.conf y añadimos lo siguiente:
 
-![img](https://github.com/estrella415/SWAP/blob/master/Practica2/6.jpeg)
+![img](https://github.com/estrella415/SWAP/blob/master/Practica3/6.jpeg)
 
 Ahora, para probar su correcto funcionamiento ejecutamos *curl http://IP_maquina2* desde la nueva máquina con nginx (la máquina 3).
 
-![img](https://github.com/estrella415/SWAP/blob/master/Practica2/2.png)
+![img](https://github.com/estrella415/SWAP/blob/master/Practica3/2.png)
 
 **2. Configurar una máquina e instalar el haproxy como balanceador de carga.**
 
