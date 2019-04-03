@@ -7,16 +7,16 @@ Los objetivos de esta prácticas son los siguientes:
 **1. Configurar una máquina e instalar el nginx como balanceador de carga.**
 
 Primero, para instalar ngins utilizaremos los siguientes comandos:
-*sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get
-autoremove
-sudo apt-get install nginx
+*sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get  
+autoremove  
+sudo apt-get install nginx  
 sudo systemctl start nginx*
 
 Comprobamos que funciona, tal y como se muestra en la imagen:
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica3/1.png)
 
-A continuación, editamos el archivo /etc/nginx/nginx.conf, comentando la línea que dice el guión (*include /etc/nginx/sites-enabled*). 
+A continuación, editamos el archivo /etc/nginx/nginx.conf, comentando la línea que dice el guión (*include /etc/nginx/sites-enabled*).  
 También borramos el contenido del archivo /etc/nginx/conf.d/default.conf y añadimos lo siguiente:
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica3/6.jpeg)
