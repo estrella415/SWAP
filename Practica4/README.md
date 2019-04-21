@@ -39,3 +39,4 @@ Y por último, en el balanceador editamos el archivo /etc/nginx/conf.d/default.c
 
 **2. Configurar las reglas del cortafuegos para proteger la granja web.**
 
+con iptables .........
