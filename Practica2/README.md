@@ -2,7 +2,7 @@
 ## Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz.
 
 
-Los objetivos de esta prácticas son los siguientes: 
+Los objetivos de esta práctica son los siguientes: 
 
 **1. Probar el funcionamiento de la copia de archivos por ssh:**
 
