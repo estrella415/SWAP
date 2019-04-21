@@ -35,8 +35,54 @@ Y por último, en el balanceador editamos el archivo /etc/nginx/conf.d/default.c
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica4/2.png)
 
+Para comprobar su correcto funcionamiento, usamos la herramienta curl desde la máquina 1 y vemos que el balanceador redirige el trabajo a las dos máquinas servidoras:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica4/5.png)
+
+(Donde pone m1 es la máquina 1, la otra es la máquina 2.)  
 
 
 **2. Configurar las reglas del cortafuegos para proteger la granja web.**
 
-con iptables .........
+Para comprobar el estado del cortafuegos ejecutamos: *iptables –L –n -v*.  
+Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta
+ese momento, ejecutaremos respectivamente:  
+*service iptables start  
+service iptables restart  
+service iptables stop  
+service iptables save*  
+
+En esta práctica se pide configurar las reglas en una máquina servidora (máquina1) mediante un script, así que creamos un script "reglas" y añadimos las siguientes órdenes:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica4/4.png)
+
+Ahora ejecutamos el script y vemos que funciona mediante el comando *iptables –L –n -v*.
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica4/3.png)
+
+Por último, para que este script se ejecute cada vez que arranquemos el sistema, lo movemos a la carpeta init.d:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica4/6.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
