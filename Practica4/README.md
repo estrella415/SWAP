@@ -11,7 +11,7 @@ configuración. Así pues, como root ejecutaremos:
 *a2enmod ssl  
 service apache2 restart  
 mkdir /etc/apache2/ssl  
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt  *
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt*
 
 Completamos los campos que se piden y, a continuación editamos el archivo /etc/apache2/sites-available/default-ssl, agregando
 debajo de SSLEngine on:  
