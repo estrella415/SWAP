@@ -2,7 +2,7 @@
 ## Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz.
 
 
-Los objetivos de esta prácticas son los siguientes: 
+Los objetivos de esta práctica son los siguientes: 
 
 **1. Instalar un certificado SSL para configurar el acceso HTTPS a los servidores.**
 
