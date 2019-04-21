@@ -1,4 +1,4 @@
-# Práctica 3: Balanceo de carga.
+# Práctica 4: Asegurar la granja web.
 ## Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz.
 
 
