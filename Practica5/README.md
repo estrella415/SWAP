@@ -69,6 +69,6 @@ Volvemos a ejecutar *SHOW SLAVE STATUS\G* y ya funciona:
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/9.png)
 
-Comprobamos el correcto funcionamiento introduciendo varios datos en una máquina y verificando que se replican:
+Probamos el correcto funcionamiento introduciendo varios datos en una máquina y comprobando que se replican:
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/10.png)
