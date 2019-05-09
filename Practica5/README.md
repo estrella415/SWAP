@@ -25,12 +25,28 @@ A continuación, desbloqueamos las tablas con el comando *UNLOCK TABLES;* (desde
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/3.png)
 
 
-Ahora copiamos el archivo .sql en el esclavo (máquina2) con la herramienta tar, como se indica al final de la siguiente imagen (a la izquierda), 
+Por último, copiamos el archivo .sql en el esclavo (máquina2) con la herramienta tar, como se indica al final de la siguiente imagen (a la izquierda), 
 y vemos como, efectivamente, aparece en el esclavo (a la derecha):
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/4.png)
 
-Por último, importamos la BD en el esclavo con el comando *create database contactos;* (en MySql), y restauramos los datos con  
-*mysql -u root -p contactos < /tmp/contactos.sql*.
+**3. Restaurar dicha copia de seguridad en la segunda máquina.**
+
+Para ello, importamos la BD en el esclavo con el comando *create database contactos;* (en MySql), y restauramos los datos con *mysql -u root -p contactos < /tmp/contactos.sql*.
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/5.png)
+
+**4. Realizar la configuración maestro-esclavo de los servidores MySQL para que la replicación de datos se realice automáticamente.**
+
+Para ello, se debe editar el archivo /etc/mysql/mysql.conf.d/mysqld.cnf, tanto en la máquina 1 como en la 2.   
+- Máquina 1 y 2:
+1. Comentar: #bind-address 127.0.0.1.
+2. Añadir (si no está): log_error = /var/log/mysql/error.log
+3. Descomentar: log_bin = /var/log/mysql/bin.log  
+
+- Máquina 1: establecer: server-id = 1
+- Máquina 2: establecer: server-id = 2  
+
+Ahora reiniciamos el servicio en ambas máquinas: */etc/init.d/mysql restart*.
+
+
