@@ -1,4 +1,4 @@
-# Práctica 4: Asegurar la granja web.
+# Práctica 5: Replicación de bases de datos MySQL.
 ## Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz.
 
 
@@ -17,7 +17,6 @@ Con esto ya tenemos una base de datos con una tabla y varios datos.
 **2. Realizar la copia de seguridad de la BD completa y copiar el archivo de copia de seguridad a la máquina secundaria.**
 
 Para ello  usaremos la herramienta mysqldump en la máquina principal (máquina1).  
-enemos que tener en cuenta que los datos pueden
 Antes de hacer la copia de seguridad debemos evitar que se acceda a la BD para cambiar nada. Para ello introducimos el comando 
 *FLUSH TABLES WITH READ LOCK;* en la interfaz de MySql, para bloquear el acceso a las tablas.   
 Después, introducimos el comando *mysqldump contactos -u root -p > /tmp/contactos.sql*, siendo "contactos" el nombre de la base de datos.  
