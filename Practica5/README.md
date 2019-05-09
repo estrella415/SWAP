@@ -49,4 +49,26 @@ Para ello, se debe editar el archivo /etc/mysql/mysql.conf.d/mysqld.cnf, tanto e
 
 Ahora reiniciamos el servicio en ambas máquinas: */etc/init.d/mysql restart*.
 
+![img](https://github.com/estrella415/SWAP/blob/master/Practica5/6.png)
 
+Si no da ningún error, vamos al maestro (máquina1), creamos un usuario y le damos permisos de acceso para la replicación, mediante los comandos de la imagen:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica5/7.png)
+
+Y en la máquina2 (esclavo) insertamos los comandos de la imagen siguiente, para pasarle los datos del maestro y arrancar el esclavo:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica5/8.png)
+
+Por último, en el maestro volvemos a desbloquear las tablas (*UNLOCK TABLES;*).  
+
+Para asegurarnos de que funciona, introducimos el comando *SHOW SLAVE STATUS\G* en el esclavo (en MySql), y revisamos que el valor de la variable “Seconds_Behind_Master” sea distinto de “null”.  
+
+Nos da un error con las UUIDs, por lo que cambiamos la UUID de la máquina2 (siguiendo el tutorial del enlace https://www.beehexa.com/blog/2017/12/17/how-to-fix-master-and-slave-have-equal-mysql-server-uuids-mysql-error/).  
+
+Volvemos a ejecutar *SHOW SLAVE STATUS\G* y ya funciona:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica5/9.png)
+
+Comprobamos el correcto funcionamiento introduciendo varios datos en una máquina y verificando que se replican:
+
+![img](https://github.com/estrella415/SWAP/blob/master/Practica5/10.png)
