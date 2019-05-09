@@ -14,14 +14,14 @@ Para ello usamos la interfaz de línea de comandos de MySql, e introducimos los 
 
 Con esto ya tenemos una base de datos con una tabla y varios datos.
 
-**2. Realizar la copia de seguridad de la BD completa y copiar el archivo de copia de seguridad a la máquina secundaria.
+**2. Realizar la copia de seguridad de la BD completa y copiar el archivo de copia de seguridad a la máquina secundaria.**
 
 Para ello  usaremos la herramienta mysqldump en la máquina principal (máquina1).  
 enemos que tener en cuenta que los datos pueden
 Antes de hacer la copia de seguridad debemos evitar que se acceda a la BD para cambiar nada. Para ello introducimos el comando 
-**FLUSH TABLES WITH READ LOCK;** en la interfaz de MySql, para bloquear el acceso a las tablas.   
-Después, introducimos el comando **mysqldump contactos -u root -p > /tmp/contactos.sql**, siendo "contactos" el nombre de la base de datos.  
-A continuación, desbloqueamos las tablas con el comando **UNLOCK TABLES;** (desde MySql de nuevo).
+*FLUSH TABLES WITH READ LOCK;* en la interfaz de MySql, para bloquear el acceso a las tablas.   
+Después, introducimos el comando *mysqldump contactos -u root -p > /tmp/contactos.sql*, siendo "contactos" el nombre de la base de datos.  
+A continuación, desbloqueamos las tablas con el comando *UNLOCK TABLES;* (desde MySql de nuevo).
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/3.png)
 
@@ -31,7 +31,7 @@ y vemos como, efectivamente, aparece en el esclavo (a la derecha):
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/4.png)
 
-Por último, importamos la BD en el esclavo con el comando **create database contactos;** (en MySql), y restauramos los datos con  
-**mysql -u root -p contactos < /tmp/contactos.sql**.
+Por último, importamos la BD en el esclavo con el comando *create database contactos;* (en MySql), y restauramos los datos con  
+*mysql -u root -p contactos < /tmp/contactos.sql*.
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica5/5.png)
