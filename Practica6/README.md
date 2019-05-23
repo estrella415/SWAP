@@ -28,7 +28,7 @@ cd /home/usuario (en mi caso: cd /home/estrella)
 mkdir carpetacliente  
 chmod -R 777 carpetacliente*
 
-Ahora podemos montar la carpeta remota en la nueva: *sudo mount 10.10.10.13:/dat/compartida carpetacliente*
+Ahora podemos montar la carpeta remota en la nueva: *sudo mount ipmaquina1:/dat/compartida carpetacliente*
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica6/2.png)
 
