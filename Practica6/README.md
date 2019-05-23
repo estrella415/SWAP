@@ -41,7 +41,7 @@ Para probar que lo anterior ha funcionado, creamos un archivo en una de las máq
 **4. Hacer permanente la configuración en los clientes para que monten automáticamente la carpeta compartida al arrancar el sistema.**
 
 Para ello, editamos el archivo /etc/fstab en las máquinas clientes, añadiendo la última línea que aparece en la siguiente imagen, 
-para que la carpeta compartida se monte al arrancar el sistema. Reiniciamos el sistema y listo.
+para que la carpeta compartida se monte al arrancar el sistema. Reiniciamos el sistema (reboot) y listo.
 
 ![img](https://github.com/estrella415/SWAP/blob/master/Practica6/3.png)
 
