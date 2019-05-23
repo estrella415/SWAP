@@ -1,4 +1,4 @@
-# Práctica 6: Servidor de disco NFS
+# Práctica 6: Servidor de disco NFS.
 ## Autores: Estrella Afán de Rivera Díaz y Javier Oliva Cruz.
 
 
